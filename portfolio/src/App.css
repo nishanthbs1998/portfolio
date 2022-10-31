@@ -1,87 +1,66 @@
-:root{
-  --fav-color:#7100e2;
+:root {
+  /* --fav-color:#7100e2; */
+  --fav-color: #6700e6;
   --typing-animation: typewriter 5s steps(23) 1.2s forwards;
 }
 
-.App{
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- background-color: white;
- 
+.App {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
 }
 
-.App .btn{
- 
- border-radius: 5px;
+.App .btn {
+  border-radius: 5px;
 
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.custom-nav{
+.custom-nav {
   padding: 0.5em 1em;
   color: var(--fav-color);
-  ;
 }
-
 
 .banner {
   padding: 1em;
 
-  padding-top: 15vh;
+  padding-top: 25vh;
   height: 75vh;
   box-sizing: border-box;
   font-family: monospace;
-  
 }
 
-.banner h1{
+.banner h1 {
   font-size: 3em;
   font-weight: bolder;
-
-
+  text-align: center;
 }
-.banner h4{
+.banner h4 {
   padding-top: 1em;
   padding-bottom: 1em;
-  text-align: justify;
+  text-align: center;
 }
 
-.about{
+.about {
   /* margin: 1em; */
   height: 100vh;
   /* background-color: rgb(134, 84, 181); */
   background-color: var(--fav-color);
   border-radius: 20px;
   padding: 1em;
-  
+
   color: white;
   box-sizing: border-box;
-  
-  
 }
 
-.about h2{
+.about h2 {
   font-size: 5em;
   z-index: -1;
   padding-right: 1em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-/* .about img{
-  width: 20.5em;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-left: 2em;
-  position: relative;
-  top: -18.5em;
-  right:-7.5em
-  ;
-} */
-/* .about p{
- 
-  position: relative;
-  top: -15em;
-text-align: justify;
 
-} */
 .experience {
   height: 100vh;
   box-sizing: border-box;
@@ -89,31 +68,17 @@ text-align: justify;
   background-color: white;
   border-radius: 20px;
   padding: 1em;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
-  /* color: beige; */
-  
-  
 }
-.experience .date{
+.experience .date {
   font-size: small;
 }
-.expContentButtons{
+.expContentButtons {
   padding-top: 1em;
-  
+
   /* border-color: black; */
-  
 }
-/* .accName{
-  color: blueviolet;
-} */
-/* .transilName{
-  color: rgb(68, 68, 192);
-} */
-/* .removeBorderRadius{
-  border-radius: 0;
-} */
-.expContent{
-  /* background-color: #002244; */
+
+.expContent {
   background-color: var(--fav-color);
   color: white;
   border-top-left-radius: 5px;
@@ -124,34 +89,34 @@ text-align: justify;
 }
 .projects {
   padding: 1em;
- 
+
   margin-top: -15vh;
   height: 100vh;
 }
 .contact {
   margin: 1em;
 }
-.icons{
+.icons {
   display: flex;
   gap: 1em;
-  
+
+  justify-content: center;
 }
-.techList{
+.techList {
   display: flex;
   gap: 5em;
   /* position: relative;
   top: -15em; */
 }
 
-
-.customButton{
-  background-color: white;border-color:var(--fav-color); color:var(--fav-color);
+.customButton {
+  background-color: white;
+  border-color: var(--fav-color);
+  color: var(--fav-color);
   /* border-style:inset ; */
   border-radius: 25px;
   padding: 0.5em 1em 0.5em 1em;
   text-align: center;
-  
-  
 }
 
 .customButton:hover {
@@ -159,129 +124,111 @@ text-align: justify;
   background-color: var(--fav-color);
 }
 
-.cards>*{
+.cards > * {
   margin-bottom: 2em;
   text-align: justify;
 }
 
-.contact{
+.contact {
   height: 100vh;
   margin-top: 25vh;
 }
 
-.navLink:hover{
-
+.navLink:hover {
   border-bottom: 1px solid var(--fav-color);
-
 }
-.Nav{
-        position: fixed;
-          top: 0;
-          width: 100%;
-          height: 4em;
-          background-color: white;
-          overflow: hidden;
-          z-index: 2;
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
 }
-  
 
-@media only screen and (min-width:690px){
-
-  /* :root {
-      --fav-color: #7100e2;
-      --typing-animation: typewriter 7s steps(23) 1.2s forwards;
-    } */
-  /* .App{
-    margin: 1em 5em 0 5em;
-  } */
-.banner{
-  height: 100vh;
-  margin: 3em 5em 0 5em ;
-  display: flex;
+@media only screen and (min-width: 690px) {
+  .banner {
+    height: 100vh;
+    margin: 3em 5em 0 5em;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.typewriter {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 300;
-  margin-bottom: 1em;
-  position: relative;
-}
-.typewriter::after,
-.typewriter::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.typewriter::before {
-  background-color: white;
-  animation: var(--typing-animation);
-}
-
-.typewriter::after {
-  width: .125em;
-  background: black;
-  animation:
-    var(--typing-animation),
-    blinkingCaret 1s infinite;
-}
-.subtitle {
-  font-family: 'Open Sans', sans-serif;
-  opacity: 0;
-  animation: slideUp 2s ease-in-out forwards 6.5s;
-}
-.banner .icons {
-  
-  opacity: 0;
-  animation: slideUp 2s ease-in-out forwards 7.5s;
-}
-@keyframes typewriter {
-  to {
-    left: 100%;
   }
-}
-
-@keyframes slideUp {
-  to {
-    opacity: 100%;
-    transform: translateY(-1.8em);
+  .typewriter {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    margin-bottom: 1em;
+    position: relative;
   }
-}
-
-@keyframes blinkingCaret {
-  to {
-    opacity: 0%;
+  .typewriter::after,
+  .typewriter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-}
+
+  .typewriter::before {
+    background-color: white;
+    animation: var(--typing-animation);
+  }
+
+  .typewriter::after {
+    width: 0.125em;
+    background: black;
+    animation: var(--typing-animation), blinkingCaret 1s infinite;
+  }
+  .subtitle {
+    font-family: "Open Sans", sans-serif;
+    opacity: 0;
+    animation: slideUp 2s ease-in-out forwards 6.5s;
+  }
+  .banner .icons {
+    opacity: 0;
+    animation: slideUp 2s ease-in-out forwards 7.5s;
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes slideUp {
+    to {
+      opacity: 100%;
+      transform: translateY(-1.8em);
+    }
+  }
+
+  @keyframes blinkingCaret {
+    to {
+      opacity: 0%;
+    }
+  }
   .about {
     padding: 2em 10em 0 10em;
     border-radius: 0;
-    
-    
+
     /* left: 71.3vw; */
-   
   }
 
-  
-  .experience{
+  .experience {
     margin: -8em 10em 0 10em;
     /* align-items: center; */
   }
 
-  .cards{
+  .cards {
     display: flex;
     align-items: center;
     padding-left: 14em;
     gap: 1em;
-    
   }
 
-  .expContentMain{
+  .expContentMain {
     width: 50em;
     margin: 0 10em 0 10em;
     /* display: flex; */
@@ -290,10 +237,7 @@ text-align: justify;
     /* justify-content: center; */
   }
 
-  /* .aboutHeader{
-    display: flex;
-  } */
-  .Nav{
+  .Nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -301,21 +245,28 @@ text-align: justify;
     background-color: white;
     overflow: hidden;
     z-index: 2;
-
   }
-  .projects{
+  .projects {
     margin: -18em 10em 0 10em;
     align-items: center;
     text-align: center;
   }
-  .contact{
+  .contact {
     margin: 0 10em 0 10em;
   }
-  .formContent{
+  .formContent {
     padding: 2em;
   }
-  .aboutContent{
+  .aboutContent {
     padding: 3em 5em 0 5em;
     font-size: large;
+  }
+  .aboutHeader {
+    text-align: center;
+  }
+  .about h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
   }
 }

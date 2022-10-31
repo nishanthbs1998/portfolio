@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { scroller } from "react-scroll";
-import navIcon from "../icons8-menu.svg" 
+import navIcon from "../assets/icons8-menu.svg" 
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -25,6 +25,7 @@ const Navigation = () => {
           placement="end"
           className="custom-nav"
           show={show}
+          onHide={toggleOffCanvas}
         >
           <Offcanvas.Header onClick={toggleOffCanvas} closeButton style={{color:'#7100e2', borderBottom:'1px solid #E8E8E8'}}>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"md"}`} style={{color:'#7100e2'}}>
@@ -40,6 +41,7 @@ const Navigation = () => {
                     offset: -70,
                     duration: 500,
                   });
+                  if(show)
                   toggleOffCanvas()
                   
                 }}
@@ -54,6 +56,7 @@ const Navigation = () => {
                     offset: -70,
                     duration: 500,
                   });
+                  if(show)
                   toggleOffCanvas()
                 }}
                 className='navLink'
@@ -68,6 +71,7 @@ const Navigation = () => {
                     offset: -70,
                     duration: 500,
                   });
+                  if(show)
                   toggleOffCanvas()
                 }}
                 className='navLink'
@@ -81,6 +85,7 @@ const Navigation = () => {
                     offset: -70,
                     duration: 500,
                   });
+                  if(show)
                  toggleOffCanvas()
                 }}
                 className='navLink'

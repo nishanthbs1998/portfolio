@@ -1,9 +1,9 @@
 import "./App.css";
-//import { Container,Nav,Offcanvas,Navbar } from "react-bootstrap";
 
-import x from './icons8-linkedin.svg'
-import y from './icons8-github.svg'
-import z from './man.png'
+
+import linkedInIcon from './assets/icons8-linkedin.svg'
+import githubIcon from './assets/icons8-github.svg'
+
 import Navigation from "./components/Navigation";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
@@ -18,19 +18,18 @@ function App() {
       </div>
       <div className="banner">
         <h1 className="typewriter">Hello, I'm Nishanth BS.</h1>
-        {/* <h1 className="typewriter"> I'm Nishanth.</h1> */}
         <h4 className="subtitle">I design and develop elegant websites and web applications.</h4>
         <div className="icons">
-        <a href="https://www.linkedin.com/in/nishanth-b-s-2a0570170/"><img src={x} alt="LinkedIn" /></a>
-        <a  href="https://github.com/nishanthbs1998"><img src={y} alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/nishanth-b-s-2a0570170/"><img src={linkedInIcon} alt="LinkedIn" /></a>
+        <a  href="https://github.com/nishanthbs1998"><img src={githubIcon} alt="GitHub" /></a>
         </div>
       </div>
 
       <div className="about">
-        {/* <div className="aboutHeader"> */}
+        <div className="aboutHeader">
         <h2>About Me</h2>
         {/* <img src={z} alt="" /> */}
-        {/* </div> */}
+        </div>
         <div className="aboutContent">
         <p>Hi! I'm Nishanth BS. I love building web sites and web applications with a sharp eye for clean aesthetics, code efficiency, and functionality.
            My work and experience mainly revolves around building web applications using the MERN stack. Two years ago, as a fresh graduate, I started out 

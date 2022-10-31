@@ -78,9 +78,9 @@ return (
       </Form.Group>
 
       
-      <Button variant="primary" type="submit" >
-        Send
-      </Button>
+      <button className="customButton"  type="submit"  >
+        Send message
+      </button>
     </Form>
     </div>
 )

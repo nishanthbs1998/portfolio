@@ -1,7 +1,7 @@
   import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import crown from "../../src/crown.svg"
-import hackerNews from"../../src/hackerNews.png"
+import crown from "../assets/crown.svg"
+import hackerNews from"../assets/hackerNews.png"
 const Project=()=>{
     return(<>
         <div className='cards'>
