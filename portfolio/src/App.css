@@ -2,12 +2,15 @@
   /* --fav-color:#7100e2; */
   --fav-color: #6700e6;
   --typing-animation: typewriter 5s steps(23) 1.2s forwards;
+  overflow-x: hidden;
 }
 
 .App {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: white;
+  position: relative;
+  display: block;
 }
 
 .App .btn {
@@ -36,6 +39,7 @@
   font-weight: bolder;
   text-align: center;
 }
+
 .banner h4 {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -60,7 +64,9 @@
   padding-right: 1em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
+.aboutContent{
+  font-size: small;
+}
 .experience {
   height: 100vh;
   box-sizing: border-box;
@@ -68,10 +74,13 @@
   background-color: white;
   border-radius: 20px;
   padding: 1em;
+  overflow: auto;
 }
+
 .experience .date {
   font-size: small;
 }
+
 .expContentButtons {
   padding-top: 1em;
 
@@ -87,21 +96,25 @@
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .projects {
   padding: 1em;
-
-  margin-top: -15vh;
+  overflow: auto;
+  /* margin-top: -15vh; */
   height: 100vh;
 }
+
 .contact {
   margin: 1em;
 }
+
 .icons {
   display: flex;
   gap: 1em;
 
   justify-content: center;
 }
+
 .techList {
   display: flex;
   gap: 5em;
@@ -124,7 +137,7 @@
   background-color: var(--fav-color);
 }
 
-.cards > * {
+.cards>* {
   margin-bottom: 2em;
   text-align: justify;
 }
@@ -137,6 +150,7 @@
 .navLink:hover {
   border-bottom: 1px solid var(--fav-color);
 }
+
 .Nav {
   position: fixed;
   top: 0;
@@ -147,8 +161,36 @@
   z-index: 2;
 }
 
-@media only screen and (min-width: 690px) {
-  .banner {
+@media only screen and (min-width:760px){
+  .aboutContent{
+    font-size: medium;
+  }
+
+  .experience{
+    margin-top: -45vh;
+  }
+  .projects{
+    margin-top: -47vh;
+    
+    text-align: center;
+  }
+  .cards{
+    display: flex;
+      align-items: center;
+      padding-left: 2em;
+
+      gap: 1em;
+  }
+ 
+
+  .contact{
+    margin-top: -30vh;
+  }
+}
+
+@media only screen and (min-width:800px){
+
+.banner {
     height: 100vh;
     margin: 3em 5em 0 5em;
     display: flex;
@@ -156,12 +198,14 @@
     justify-content: center;
     align-items: center;
   }
+
   .typewriter {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
     margin-bottom: 1em;
     position: relative;
   }
+
   .typewriter::after,
   .typewriter::before {
     content: "";
@@ -182,15 +226,18 @@
     background: black;
     animation: var(--typing-animation), blinkingCaret 1s infinite;
   }
+
   .subtitle {
     font-family: "Open Sans", sans-serif;
     opacity: 0;
     animation: slideUp 2s ease-in-out forwards 6.5s;
   }
+
   .banner .icons {
     opacity: 0;
     animation: slideUp 2s ease-in-out forwards 7.5s;
   }
+
   @keyframes typewriter {
     to {
       left: 100%;
@@ -209,6 +256,108 @@
       opacity: 0%;
     }
   }
+  
+
+.about h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+.aboutContent {
+  font-size: medium;
+  padding: 1em 1em 0 1em;
+
+}
+.about {
+  width: auto;
+
+}
+
+.aboutHeader {
+  text-align: center;
+}
+
+.experience{
+  margin-top: -40vh;
+}
+
+.projects{
+  overflow: auto;
+  margin-top: -45vh;
+}
+.contact{
+  margin-top: -35vh;
+}
+}
+
+@media only screen and (min-width: 920px) {
+  .banner {
+    height: 100vh;
+    margin: 3em 5em 0 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .typewriter {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    margin-bottom: 1em;
+    position: relative;
+  }
+
+  .typewriter::after,
+  .typewriter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .typewriter::before {
+    background-color: white;
+    animation: var(--typing-animation);
+  }
+
+  .typewriter::after {
+    width: 0.125em;
+    background: black;
+    animation: var(--typing-animation), blinkingCaret 1s infinite;
+  }
+
+  .subtitle {
+    font-family: "Open Sans", sans-serif;
+    opacity: 0;
+    animation: slideUp 2s ease-in-out forwards 6.5s;
+  }
+
+  .banner .icons {
+    opacity: 0;
+    animation: slideUp 2s ease-in-out forwards 7.5s;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes slideUp {
+    to {
+      opacity: 100%;
+      transform: translateY(-1.8em);
+    }
+  }
+
+  @keyframes blinkingCaret {
+    to {
+      opacity: 0%;
+    }
+  }
+
   .about {
     padding: 2em 10em 0 10em;
     border-radius: 0;
@@ -218,6 +367,7 @@
 
   .experience {
     margin: -8em 10em 0 10em;
+   
     /* align-items: center; */
   }
 
@@ -229,7 +379,7 @@
   }
 
   .expContentMain {
-    width: 50em;
+    width: auto;
     margin: 0 10em 0 10em;
     /* display: flex; */
     /* flex-direction: column; */
@@ -246,27 +396,59 @@
     overflow: hidden;
     z-index: 2;
   }
+
   .projects {
     margin: -18em 10em 0 10em;
     align-items: center;
     text-align: center;
   }
+
   .contact {
     margin: 0 10em 0 10em;
   }
+
   .formContent {
     padding: 2em;
   }
+
   .aboutContent {
     padding: 3em 5em 0 5em;
     font-size: large;
+    width: auto;
   }
+
   .aboutHeader {
     text-align: center;
   }
+
   .about h2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
   }
+}
+
+@media only screen and (min-width:1024px){
+  .aboutContent{
+  
+    padding: 1em 0 0 0;
+  }
+
+  .experience{
+    width: auto;
+    /* margin: -8em 10em 0 10em; */
+    margin-left:8em
+  }
+
+  .projects{
+    margin: -5em;
+    padding-left: 0;
+  }
+  .cards{
+    margin-left: 10em;
+  }
+  .contact{
+    margin-top: 5em;
+  }
+
 }
