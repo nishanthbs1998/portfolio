@@ -169,7 +169,7 @@
       animation: slideUp 2s ease-in-out forwards 1s;
   }
   .subtitle {
-    margin-top: -2.5em;
+    margin-top: -2em;
       font-family: "Open Sans", sans-serif;
       opacity: 0;
       animation: slideUp 2s ease-in-out forwards 3s;
