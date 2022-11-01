@@ -67,6 +67,7 @@
 }
 .aboutContent{
   font-size: small;
+  text-align: justify;
 }
 .experience {
   height: 100vh;
