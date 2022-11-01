@@ -3,6 +3,7 @@
   --fav-color: #6700e6;
   --typing-animation: typewriter 5s steps(23) 1.2s forwards;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App {
@@ -29,7 +30,7 @@
   padding: 1em;
 
   padding-top: 25vh;
-  height: 75vh;
+  height: 100vh;
   box-sizing: border-box;
   font-family: monospace;
 }
@@ -53,7 +54,7 @@
   background-color: var(--fav-color);
   border-radius: 20px;
   padding: 1em;
-
+  overflow-y: auto;
   color: white;
   box-sizing: border-box;
 }
@@ -160,7 +161,36 @@
   overflow: hidden;
   z-index: 2;
 }
+@media only screen and (max-width:799px){
 
+  .typewriter{
+    padding-top: 3em;
+    opacity: 0;
+      animation: slideUp 2s ease-in-out forwards 1s;
+  }
+  .subtitle {
+    margin-top: -2.5em;
+      font-family: "Open Sans", sans-serif;
+      opacity: 0;
+      animation: slideUp 2s ease-in-out forwards 3s;
+    }
+  
+    .banner .icons {
+      margin-top: -1em;
+      opacity: 0;
+      animation: slideUp 2s ease-in-out forwards 4s;
+    }
+  
+  
+  
+    @keyframes slideUp {
+      to {
+        opacity: 100%;
+        transform: translateY(-1.8em);
+      }
+    }
+
+}
 @media only screen and (min-width:760px){
   .aboutContent{
     font-size: medium;
