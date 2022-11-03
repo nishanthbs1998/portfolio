@@ -16,10 +16,10 @@ const Contact=()=>{
      e.preventDefault();
     send(
        
-      'service_30r217q',
-      'template_wy19huj',
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
       toSend,
-       'qRdWRaK1B0Jeng-U1',
+       process.env.REACT_APP_UNIQUE_KEY,
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
