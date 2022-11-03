@@ -4,6 +4,7 @@ import "./App.css";
 import linkedInIcon from './assets/icons8-linkedin.svg'
 import githubIcon from './assets/icons8-github.svg'
 
+
 import Navigation from "./components/Navigation";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
@@ -25,6 +26,7 @@ function App() {
         </div>
       </div>
 
+    
       <div className="about">
         <div className="aboutHeader">
         <h2>About Me</h2>

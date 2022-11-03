@@ -4,6 +4,7 @@
   --typing-animation: typewriter 5s steps(23) 1.2s forwards;
   overflow-x: hidden;
   overflow-y: auto;
+  
 }
 
 .App {
@@ -12,6 +13,7 @@
   background-color: white;
   position: relative;
   display: block;
+  
 }
 
 .App .btn {
@@ -162,6 +164,9 @@
   overflow: hidden;
   z-index: 2;
 }
+
+
+
 @media only screen and (max-width:799px){
 
   .typewriter{
@@ -192,6 +197,9 @@
     }
 
 }
+
+
+
 @media only screen and (min-width:760px){
   .aboutContent{
     font-size: medium;
@@ -218,6 +226,8 @@
     margin-top: -30vh;
   }
 }
+
+
 
 @media only screen and (min-width:800px){
 
@@ -318,6 +328,9 @@
 }
 .contact{
   margin-top: -35vh;
+}
+.formContent{
+  padding: 2em 15em 0 4em;
 }
 }
 
@@ -438,9 +451,9 @@
     margin: 0 10em 0 10em;
   }
 
-  .formContent {
+  /* .formContent {
     padding: 2em;
-  }
+  } */
 
   .aboutContent {
     padding: 3em 5em 0 5em;
@@ -457,9 +470,13 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
   }
+    .formContent {
+      padding: 2em 15em 0 4em;
+    }
 }
 
 @media only screen and (min-width:1024px){
+  
   .aboutContent{
   
     padding: 1em 0 0 0;
@@ -481,5 +498,42 @@
   .contact{
     margin-top: 5em;
   }
+     .formContent {
+       padding: 2em 15em 0 4em;
+     }
 
+}
+
+@media screen and (min-aspect-ratio: 4/3) and (max-height:500px){
+
+  .aboutContent p {
+    font-size: small;
+  }
+
+  .aboutContent li {
+    font-size: small;
+  }
+
+  .experience {
+    position: relative;
+    top: 140px;
+    border-radius: 10px;
+  }
+
+  .expContent {
+    font-size: small;
+  }
+
+  .projects {
+    position: relative;
+    top: 340px;
+
+  }
+
+  .contact {
+    position: relative;
+    top: 520px;
+
+
+  }
 }

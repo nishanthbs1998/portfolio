@@ -5,7 +5,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 const Experience=()=> {
     const [content,setContent]=useState( <>
-               <h4 style={{fontStyle:"italic"}}>Software Engineer @ <span className='accName'>  Accenture</span> </h4>
+               <h4 style={{fontStyle:"italic"}}>Application Development Analyst @ <span className='accName'>  Accenture</span> </h4>
                <p style={{fontStyle:"italic"}} className="date">Jan 2021 - Present</p>        
                <ul style={{textAlign:'justify'}}>
                 <li>Designed, developed and deployed a tool to facilitate the data team in performing data validation activities, which were earlier performed manually.</li>
@@ -18,7 +18,7 @@ const Experience=()=> {
         
         setContent(
             <>
-               <h4 style={{fontStyle:"italic"}}>Software Engineer @  <span className='accName'>Accenture</span> </h4>
+               <h4 style={{fontStyle:"italic"}}>Application Development Analyst @  <span className='accName'>Accenture</span> </h4>
                <p style={{fontStyle:"italic"}} className="date">Jan 2021 - Present</p>        
                <ul style={{textAlign:'justify'}}>
                 <li>Designed, developed and deployed a tool to facilitate the data team in performing data validation activities, which were earlier performed manually.</li>
